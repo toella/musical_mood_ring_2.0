@@ -2,37 +2,40 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ .container{
+   background-color: rgb(128, 62, 62);
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   font-size: 23px;
+   color: cornsilk;
+   text-align: center;
+ }
+ h1,
+ h2{
+   margin: 10px;
+ }
+
+ .answers {
+   border: 1px solid #fff;
+   padding: 5px 10px 5px 45px;
+   width: 610px;
+   text-align: left;
+   margin-top: 10px;
+   position: relative;
+   font-size: 22px;
+   cursor: grab;
+   transition: ease-in-out, width .35s ease-in-out;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.answers.selected{
+  background-color: darkgreen;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Answer:hover{
+  color: rgb(162, 94, 6);
+  background-color: darkcyan;
 }
